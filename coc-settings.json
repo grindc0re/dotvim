@@ -1,0 +1,8 @@
+{
+    "inlayHint.enable": false,
+    "diagnostic.errorSign": "⊗",
+    "diagnostic.hintSign": "⋯",
+    "diagnostic.warningSign": "⚠",
+    "diagnostic.infoSign": "𝐢",
+    "snippets.ultisnips.pythonPrompt": false,
+}
