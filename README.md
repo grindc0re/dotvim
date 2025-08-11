@@ -1,5 +1,10 @@
 # Vim config, grindc0re style
 
+## Setup
+```bash
+git clone --recurse-submodules -j8 https://github.com/grindc0re/dotvim.git ~/.vim
+```
+
 ## Plugins
 Plugins are managed as git submodules using Vims built-in package manager.
 Optional plugins (in `**/opt/*`) are loaded when needed using, for example, `packadd devdocs.vim`.
@@ -38,6 +43,10 @@ $ tree -L 2 .
 ```
 
 ## Dependencies
+```bash
+sudo apt install libsm-dev libxpm-dev libxt-dev nodejs pandoc python3-dev
+```
+
 * libSM-dev
 * libXpm-dev
 * libXt-dev
@@ -50,6 +59,7 @@ Compile with *huge* flag to get system clipboard support.
 
 ```bash
 git clone --depth 1 --branch <tag_name> https://github.com/vim/vim.git
+cd vim
 ./configure --with-features=huge --enable-python3interp --enable-luainterp --enable-perlinterp
 make
 sudo make install
