@@ -74,3 +74,8 @@ npm i
 cd app/
 npm i
 ```
+
+### CoC autocompletion
+```
+:CocInstall coc-pyright coc-snippets @yaegassy/coc-ruff coc-htmldjango coc-tailwindcss coc-toml coc-json coc-docker coc-css
+```
