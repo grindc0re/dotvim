@@ -1,5 +1,9 @@
 " ========== Base settings ==========
 
+" Use filetype-aware indent rules instead.
+set noautoindent
+set nosmartindent
+
 " Don't try to emulate vi
 set nocompatible
 
