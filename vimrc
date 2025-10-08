@@ -151,7 +151,12 @@ autocmd BufReadPost *
 let g:ctrlp_map = '<leader>p'
 let g:ctrlp_cmd = 'CtrlP'
 let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
-let g:ctrlp_custom_ignore = { 'dir':  '\v[\/](\.git|node_modules)$' }
+let g:ctrlp_custom_ignore = { 'dir':  '\v[\/](\.git|node_modules|\.venv)$' }
+let g:ctrlp_cache_dir = $HOME . '/.cache/ctrlp'
+if executable('ag')
+  let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+endif
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/vendor/*,*/\.git/*
 
 " NERDTree
 nnoremap <leader>n :NERDTreeToggle<CR>
