@@ -198,6 +198,14 @@ au BufRead,BufNewFile *.ino set filetype=c
 " Use some django-specific formatting when editing html
 autocmd BufNewFile,BufRead *.html :set filetype=htmldjango
 
+" Format all python-code with black
+" Use globally installed black
+let g:black_use_virtualenv = 0
+augroup black_on_save
+  autocmd!
+  autocmd BufWritePre *.py silent! Black
+augroup end
+
 " ========== Colors and theme settings ==========
 " Also see Airline section below"
 
