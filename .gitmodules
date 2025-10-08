@@ -47,3 +47,6 @@
 [submodule "pack/docs/opt/devdocs.vim"]
 	path = pack/docs/opt/devdocs.vim
 	url = https://github.com/girishji/devdocs.vim.git
+[submodule "pack/utils/opt/markdown-preview.nvim"]
+	path = pack/utils/opt/markdown-preview.nvim
+	url = https://github.com/iamcco/markdown-preview.nvim.git
