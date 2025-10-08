@@ -41,9 +41,6 @@
 [submodule "pack/editing/start/vim-snippets"]
 	path = pack/editing/start/vim-snippets
 	url = https://github.com/honza/vim-snippets.git
-[submodule "pack/nav/start/fuzzyy"]
-	path = pack/nav/start/fuzzyy
-	url = https://github.com/Donaldttt/fuzzyy
 [submodule "pack/nav/start/easyjump.vim"]
 	path = pack/nav/start/easyjump.vim
 	url = https://github.com/girishji/easyjump.vim.git
