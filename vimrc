@@ -206,6 +206,9 @@ augroup black_on_save
   autocmd BufWritePre *.py silent! Black
 augroup end
 
+" Sort python imports using isort.
+autocmd BufWritePre *.py call isort#Isort(0, line('$'), v:null, v:false)
+
 " ========== Colors and theme settings ==========
 " Also see Airline section below"
 
