@@ -201,6 +201,7 @@ autocmd BufNewFile,BufRead *.html :set filetype=htmldjango
 " Format all python-code with black
 " Use globally installed black
 let g:black_use_virtualenv = 0
+let g:black_linelength = 100
 augroup black_on_save
   autocmd!
   autocmd BufWritePre *.py silent! Black
