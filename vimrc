@@ -198,18 +198,6 @@ au BufRead,BufNewFile *.ino set filetype=c
 " Use some django-specific formatting when editing html
 autocmd BufNewFile,BufRead *.html :set filetype=htmldjango
 
-" Format all python-code with black
-" Use globally installed black
-let g:black_use_virtualenv = 0
-let g:black_linelength = 100
-augroup black_on_save
-  autocmd!
-  autocmd BufWritePre *.py silent! Black
-augroup end
-
-" Sort python imports using isort.
-autocmd BufWritePre *.py call isort#Isort(0, line('$'), v:null, v:false)
-
 " ========== Colors and theme settings ==========
 " Also see Airline section below"
 
@@ -251,6 +239,7 @@ let g:airline_symbols.branch = ''
 let g:airline_symbols.readonly = ''
 let g:airline_symbols.linenr = ' '
 let g:airline_symbols.maxlinenr = ' '
+let g:airline_symbols.notexists = ''
 let g:airline_powerline_fonts = 1
 let g:airline_skip_empty_sections = 1
 
