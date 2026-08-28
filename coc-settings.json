@@ -5,5 +5,15 @@
   "diagnostic.warningSign": "⚠",
   "diagnostic.infoSign": "𝐢",
   "snippets.ultisnips.pythonPrompt": false,
-  "coc.preferences.formatOnSave": true
+  "coc.preferences.formatOnSave": true,
+  "python.formatting.provider": "ruff",
+  "pyright.organizeimports.provider": "ruff",
+  "[python]": {
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.fixAll": "always",
+      "source.organizeImports": "always"
+    },
+    "editor.defaultFormatter": "charliermarsh.ruff"
+  }
 }
