@@ -79,3 +79,9 @@ npm i
 ```
 :CocInstall coc-pyright coc-snippets @yaegassy/coc-ruff coc-htmldjango coc-tailwindcss coc-toml coc-json coc-docker coc-css
 ```
+
+### Persistent undo
+
+```bash
+mkdir $HOME/.cache/vim-undo/
+```
