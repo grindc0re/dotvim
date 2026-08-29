@@ -46,6 +46,7 @@ set relativenumber
 
 " Highlight the line with the cursor
 set cursorline
+set cursorlineopt=number
 
 " Display a line at 100 chars for reference
 set colorcolumn=99
@@ -84,6 +85,10 @@ set clipboard^=unnamed,unnamedplus
 
 " Set updatetime till 100ms to speed upp gutter hints
 set updatetime=100
+
+" Split and focus right or bottom.
+set splitbelow
+set splitright
 
 " ========== Tab settings ==========
 
