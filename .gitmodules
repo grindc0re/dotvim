@@ -53,3 +53,6 @@
 [submodule "pack/formatting/start/isort.vim"]
 	path = pack/formatting/start/isort.vim
 	url = https://github.com/brentyi/isort.vim.git
+[submodule "pack/themes/start/blend-vim"]
+	path = pack/themes/start/blend-vim
+	url = https://github.com/grindc0re/blend-vim

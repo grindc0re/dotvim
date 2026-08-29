@@ -209,11 +209,11 @@ let &t_EI = "\e[2 q"
 syntax on
 
 " Use guifg and guibg for the terminal (24bit colors)
-set termguicolors
+" set termguicolors
 
 " Use dark version of one color theme
 set background=dark
-colorscheme one
+colorscheme blend
 
 " Customize highlight rules
 highlight CocErrorSign ctermfg=1 guifg=#be5046
