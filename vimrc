@@ -226,6 +226,13 @@ highlight CocWarningSign ctermfg=2 guifg=#d19a66
 highlight CocInfoSign ctermfg=3 guifg=#56b6c2
 highlight CocHintSign ctermfg=4 guifg=#4b5263
 
+function! Inspect()
+    let l:s = synID(line('.'), col('.'), 1)
+    echo synIDattr(l:s, 'name') . ' -> ' . synIDattr(synIDtrans(l:s), 'name')
+endfun
+
+command! -nargs=0 Inspect :call Inspect()
+
 " ========== Airline settings ==========
 
 " Set the airline theme to match the vim color theme
